@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-57LXRQQ');</script>
+<!-- End Google Tag Manager -->    	<title>Wayback Machine downloader - 404 - page not found</title>
+		<link property="stylesheet" type="text/css" rel="stylesheet" href="https://www3.waybackmachinedownloader.com/en/css/style.css">
+		<style>
+			.lang_list_wrp {text-align:center;}
+			.lang_list_wrp .lang_wrp{  display: inline-block;
+				margin-bottom: 30px;
+				margin-top: 10px!important;
+				position: relative;
+				width: auto;}
+			.lang_list_wrp .container{width:auto; }
+			.lang_list_wrp ul.lang_list{display: block; }
+			.lang_list_wrp ul.lang_list_wrp li.active{ background:white; }
+			.lang_list_wrp ul.lang_list_wrp li.active a {color: black;}
+			.lang_list_wrp ul.lang_list_wrp > li:first-child{ border-top: 1px solid;}
+			.lang_list_wrp .lang_list_wrp >li> a{ display:none;}
+		</style>
+	</head>
+	<body style="background-color:#F8F8F8">
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57LXRQQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<section>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 col-md-offset-3 text-center" style="margin-bottom: 10px;margin-top: 30px;">
+						<a class="logo_404" href="https://www3.waybackmachinedownloader.com/en/">
+							<img src="https://www3.waybackmachinedownloader.com/en/img/logo-230.png" alt="" title="">
+						</a>
+					</div>
+					<div class="col-md-6 col-md-offset-3">
+						<h1>404 - page not found</h1>
+						<p>Something went wrong with the URL that you tried to access.</p>
+						<p>It could be related to the language cookie, so please reset the language cookie by clicking on one of these buttons:</p>
+						<p>If it still doesn't work, then try to use the English version of this website, because that version contains is most likely to work correctly</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="https://www3.waybackmachinedownloader.com/en/js/jquery.js"></script>
+		<script src="https://www3.waybackmachinedownloader.com/en/js/jquery-cookie.js"></script>
+		<script>	
+			var my_site = 'https://www3.waybackmachinedownloader.com';
+			$(document).ready(function(){
+				$('.lang_list a').unbind('click').bind('click',function(e){
+					e.preventDefault();
+					var lang_name = $(this).html(),
+					lang = $(this).parent().attr('data-lang');
+					// $.cookie('pref_lang', lang, { expires: 7, path: '/' });
+					$.cookie('pref_lang', '', { path: '/' });
+					
+					var new_url = my_site+'/'+lang+'/';
+					document.location.href=new_url;
+					// console.log(new_url);
+				})
+				$('.logo_404').unbind('click').bind('click',function(e){
+					e.preventDefault();
+					// $.cookie('pref_lang', lang, { expires: 7, path: '/' });
+					$.cookie('pref_lang', '', { path: '/' });
+					
+					var new_url = my_site+'/en';
+					document.location.href=new_url;
+					
+				})
+			})
+		</script>
+		
+	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"85df3c5660774d69ba32fb9b3097edd2","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
