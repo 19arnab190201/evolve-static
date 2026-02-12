@@ -1546,40 +1546,10 @@
             }
             (e.length && e.remove(), i || d.append(t));
           }
+          // Disable Webflow "Made in Webflow" badge injection
           return (
             (a.ready = function () {
-              var a,
-                n,
-                d,
-                u = o.attr("data-wf-status"),
-                p = o.attr("data-wf-domain") || "";
-              (/\.webflow\.io$/i.test(p) && l.hostname !== p && (u = !0),
-                u &&
-                  !c &&
-                  ((t =
-                    t ||
-                    ((a = e('<a class="webflow-the-og-badge"></a>').attr(
-                      "href",
-                      "https://webflow.com?utm_campaign=brandjs",
-                    )),
-                    (n = e("<img>")
-                      .attr(
-                        "src",
-                        "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e.svg",
-                      )
-                      .attr("alt", "")
-                      .css({ marginRight: "4px", width: "26px" })),
-                    (d = e("<img>")
-                      .attr(
-                        "src",
-                        "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg",
-                      )
-                      .attr("alt", "Made in Webflow")),
-                    a.append(n, d),
-                    a[0])),
-                  f(),
-                  setTimeout(f, 500),
-                  e(i).off(r, s).on(r, s)));
+              // Badge intentionally disabled
             }),
             a
           );
